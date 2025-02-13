@@ -8,13 +8,14 @@
   display: flex;
   gap: 10px;
   padding: 10px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   input {
     flex: 0 0 60%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
   }
 
   select {
@@ -30,4 +31,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
+  margin-bottom: 40px;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: darkcyan;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
