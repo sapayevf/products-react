@@ -38,13 +38,17 @@ function Products() {
       product.title.toLowerCase().includes(search.toLowerCase())
     )
     .sort((a, b) => {
-      if (sortPrice === "asc") return a.price - b.price;
-      if (sortPrice === "desc") return b.price - a.price;
+      if (sortPrice === "asc") 
+        return a.price - b.price;
+      if (sortPrice === "desc") 
+        return b.price - a.price;
       return 0;
     })
     .sort((a, b) => {
-      if (sortRating === "asc") return a.rating - b.rating;
-      if (sortRating === "desc") return b.rating - a.rating;
+      if (sortRating === "asc") 
+        return a.rating - b.rating;
+      if (sortRating === "desc") 
+        return b.rating - a.rating;
       return 0;
     });
 
